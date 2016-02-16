@@ -1,6 +1,7 @@
 // character animation test
 // 13.02.2016 Noriyuki
 
+//Änderung 16.44 Uhr
 
 /////////player
 float playerX; // position of playerX
@@ -40,7 +41,7 @@ ArrayList<PImage> loadImages (String filePattern) {
   do {
     String fname = filePattern.replace(qmString, nf(ctr, qmString.length()));
     InputStream input = createInput(fname);
-    if (input==null) break; 
+    if (input==null) break;
     PImage img = loadImage (fname);
     if (img==null) break;
     images.add(img);
